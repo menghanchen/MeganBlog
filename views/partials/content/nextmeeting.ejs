@@ -1,0 +1,15 @@
+<article class="meeting">
+    <h1>Profile</h1>
+    <p>
+        <%= appdata.meeting.name %> 
+        <p> 
+            studied in <%= appdata.meeting.where.education %> from 
+            <%= appdata.meeting.where.time %>, majored in
+            <%= appdata.meeting.where.major %>
+        </p>
+    </p>
+
+    <p>
+        <% include socialmedia.ejs%>
+    </p>
+</article>
